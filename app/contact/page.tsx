@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, Linkedin, Send } from "lucide-react";
+import { Mail, Linkedin, Send } from "lucide-react";
 import { CONTACT_INFO } from "@/lib/constants";
 
 export default function ContactPage() {
@@ -285,21 +285,6 @@ export default function ContactPage() {
                       className="mt-1 block text-foreground-secondary transition-colors hover:text-accent-primary"
                     >
                       {CONTACT_INFO.email}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md bg-accent-primary/10">
-                    <Phone className="h-6 w-6 text-accent-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">Phone</h3>
-                    <a
-                      href={`tel:${CONTACT_INFO.phone}`}
-                      className="mt-1 block text-foreground-secondary transition-colors hover:text-accent-primary"
-                    >
-                      {CONTACT_INFO.phone}
                     </a>
                   </div>
                 </div>

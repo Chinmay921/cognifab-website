@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { NAV_LINKS, CONTACT_INFO, COMPANY_INFO } from "@/lib/constants";
 
 export default function Footer() {
@@ -39,13 +39,6 @@ export default function Footer() {
               >
                 <Mail className="h-5 w-5" />
               </a>
-              <a
-                href={`tel:${CONTACT_INFO.phone}`}
-                className="text-foreground-secondary transition-colors hover:text-accent-primary"
-                aria-label="Phone"
-              >
-                <Phone className="h-5 w-5" />
-              </a>
             </div>
           </div>
 
@@ -76,14 +69,6 @@ export default function Footer() {
                   className="text-sm text-foreground-secondary transition-colors hover:text-accent-primary"
                 >
                   {CONTACT_INFO.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`tel:${CONTACT_INFO.phone}`}
-                  className="text-sm text-foreground-secondary transition-colors hover:text-accent-primary"
-                >
-                  {CONTACT_INFO.phone}
                 </a>
               </li>
               <li>

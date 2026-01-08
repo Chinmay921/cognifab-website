@@ -224,7 +224,6 @@ The site clearly separates:
 ## Contact
 
 - **Email**: chinmaydongarkar@gmail.com
-- **Phone**: +91 8551099099
 - **LinkedIn**: [cognifab-tech](https://www.linkedin.com/company/cognifab-tech)
 
 ## License
