@@ -225,7 +225,7 @@ The site clearly separates:
 
 - **Email**: chinmaydongarkar@gmail.com
 - **Phone**: +91 8551099099
-- **LinkedIn**: [linkedin.com/in/chinmay-do](https://www.linkedin.com/in/chinmay-do/)
+- **LinkedIn**: [cognifab-tech](https://www.linkedin.com/company/cognifab-tech)
 
 ## License
 

@@ -11,7 +11,7 @@ export const NAV_LINKS = [
 export const CONTACT_INFO = {
   email: "chinmaydongarkar@gmail.com",
   phone: "+91 8551099099",
-  linkedin: "https://www.linkedin.com/in/chinmay-do/",
+  linkedin: "https://www.linkedin.com/company/cognifab-tech",
 };
 
 export const COMPANY_INFO = {
