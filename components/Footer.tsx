@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Linkedin, Mail } from "lucide-react";
 import { NAV_LINKS, CONTACT_INFO, COMPANY_INFO } from "@/lib/constants";
 
@@ -11,13 +12,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-accent-primary">
-                <span className="text-lg font-semibold text-background">C</span>
-              </div>
-              <span className="text-xl font-semibold text-foreground">
-                {COMPANY_INFO.name}
-              </span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo.png"
+                alt={COMPANY_INFO.name}
+                width={150}
+                height={50}
+                className="h-auto w-auto max-h-10"
+              />
             </Link>
             <p className="mt-4 max-w-md text-sm text-foreground-secondary">
               {COMPANY_INFO.description}

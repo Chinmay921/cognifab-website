@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
@@ -12,11 +13,15 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-accent-primary">
-            <span className="text-lg font-semibold text-background">C</span>
-          </div>
-          <span className="text-xl font-semibold text-foreground">Cognifab</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Cognifab"
+            width={150}
+            height={50}
+            className="h-auto w-auto max-h-10"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
